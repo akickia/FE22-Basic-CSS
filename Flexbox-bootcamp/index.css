@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1400px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 2px solid #fff
+}
+
+/*Menus*/
+ul {
+  margin: 0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  background-color: #eeeeee;
+}
+
+li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 2rem
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.menu-list1 {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.menu-list1 li:first-child {
+  background-color: rgb(79, 79, 79);
+}
+
+.menu-list1 li:first-child a {
+  color: lightgray;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.menu2, .menu3 {
+  justify-content: space-between;
+  background-color: #eeeeee;
+  align-items: center;
+}
+
+.menu2 li, .menu3 li {
+  color: #A4A4A4;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 2rem;
+  color: #A4A4A4;
+  border: 1px solid #A4A4A4;
+  border-radius: 15%;
+}
+
+.base {
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  min-height: 100vh 
+}
+
+/*Japaneese flag*/
+.flag {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  width: 400px;
+  height: 250px;
+}
+
+.circle {
+  background-color: red;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/*fibonacci*/
+.fibonacci {
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  height: 50vh;
+  
+}
+
+.fibonacci-container {
+  min-width: 80%;
+  min-height: 100px;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.box {
+  color: white;
+  font-weight: normal;
+  padding: 0.5%;
+  background-color: rgb(17, 46, 188);
+}
+
+.box:nth-child(1) {
+  flex: 0;
+  opacity: 0.5;
+}
+.box:nth-child(2) {
+  flex: 1;
+  opacity: 0.55;
+}
+.box:nth-child(3) {
+  flex: 1;
+  opacity: 0.60;
+}
+.box:nth-child(4) {
+  flex: 2;
+  opacity: 0.65;
+}
+.box:nth-child(5) {
+  flex: 3;
+  opacity: 0.70;
+}
+.box:nth-child(6) {
+  flex: 5;
+  opacity: 0.75;
+}
+.box:nth-child(7) {
+  flex: 8;
+  opacity: 0.80;
+}
+.box:nth-child(8) {
+  flex: 13;
+  opacity: 0.85;
+}
+.box:nth-child(9) {
+  flex: 21;
+  opacity: 0.90;
+}
+.box:nth-child(10) {
+  flex: 34;
+  opacity: 1;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/*Card with pager*/
+.card {
+  max-width: 300px;
+  width: 100%;
+  min-height: 450px;
+  background-color: #fff;
+  margin: 0;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.25);
+  align-content: space-between;
+  justify-content: center;
+}
+
+.text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+}
+
+.lighter {
+  width: 100%;
+  text-align: center;
+  color:#A4A4A4
+}
+
+.dots {
+  width: 100%;
+  justify-content: center;
+}
+
+.small-circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color:#A4A4A4;
+  margin: 4%;
+}
+
+.small-circle:first-child {
+  background-color: rgb(17, 46, 188);
+}
+
+/*Profile card*/
+.card-profile  {
+  align-content: center;
+}
+
+.info{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h4 {
+  font-size: 2rem;
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card-btn {
+  margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  ul {
+    flex-direction: column;
+  }
+}
